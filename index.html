@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jagdeep Kumar Mahto | Software & Data Engineer</title>
+  <meta name="description" content="Portfolio of Jagdeep Kumar Mahto - Software & Data Engineer specializing in C++, Python, Snowflake, and Cloud Data Pipelines." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-slate-950 text-slate-200 font-sans selection:bg-brand-500 selection:text-slate-950 relative overflow-x-hidden">
+
+  <!-- Ambient Background Accents -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-gradient-to-tr from-teal-500/15 to-cyan-500/10 blur-[130px] -z-10 pointer-events-none"></div>
+  <div class="fixed bottom-0 right-0 w-[500px] h-[400px] bg-emerald-500/10 blur-[150px] -z-10 pointer-events-none"></div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/75 border-b border-slate-800/80 transition-all">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#hero" class="text-lg font-bold tracking-tight text-white flex items-center gap-2 group">
+        <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-400 to-cyan-600 flex items-center justify-center text-slate-950 font-mono font-bold text-sm shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">JM</span>
+        <span>Jagdeep<span class="text-brand-400">.</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-400">
+        <a href="#experience" class="hover:text-white transition">Experience</a>
+        <a href="#skills" class="hover:text-white transition">Skills</a>
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#certifications" class="hover:text-white transition">Certifications</a>
+        <a href="#education" class="hover:text-white transition">Education</a>
+        <a href="Resume_jagdeep_kumar_mahto.pdf" download class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-brand-500 hover:bg-brand-400 text-slate-950 font-semibold text-xs tracking-wide uppercase transition shadow-md shadow-brand-500/15 hover:shadow-brand-500/30">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+          Resume (PDF)
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" aria-label="Toggle menu" class="md:hidden p-2 text-slate-400 hover:text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden px-6 pt-2 pb-6 border-b border-slate-800 bg-slate-950/95 space-y-4 text-sm font-medium">
+      <a href="#experience" class="block text-slate-300 hover:text-brand-400 py-1">Experience</a>
+      <a href="#skills" class="block text-slate-300 hover:text-brand-400 py-1">Skills</a>
+      <a href="#projects" class="block text-slate-300 hover:text-brand-400 py-1">Projects</a>
+      <a href="#certifications" class="block text-slate-300 hover:text-brand-400 py-1">Certifications</a>
+      <a href="#education" class="block text-slate-300 hover:text-brand-400 py-1">Education</a>
+      <a href="Resume_jagdeep_kumar_mahto.pdf" download class="inline-block w-full text-center px-4 py-2.5 rounded-lg bg-brand-500 text-slate-950 font-bold text-xs uppercase tracking-wider">Download Resume (PDF)</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="max-w-6xl mx-auto px-6 pt-16 pb-20">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-brand-400 mb-6 shadow-inner">
+        <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+        Currently Software Developer @ Cadmaxx (Client: LRDE, DRDO)
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+        Software & Data Engineer building robust systems.
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-400 leading-relaxed mb-8">
+        Hi, I'm <span class="text-white font-medium">Jagdeep Kumar Mahto</span>. I specialize in cross-platform C/C++ engineering, scalable ETL pipeline architecture, and cloud data warehousing across Snowflake, dbt, and modern analytics stacks.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="Resume_jagdeep_kumar_mahto.pdf" download class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold text-sm transition shadow-lg shadow-brand-500/20 hover:-translate-y-0.5">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+          Download Resume (PDF)
+        </a>
+        <a href="https://linkedin.com/in/jagdeep-kumar-mahto" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 text-sm font-medium transition hover:-translate-y-0.5">
+          <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <button id="copyEmailBtn" onclick="copyEmail()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-slate-200 border border-slate-800 text-sm font-mono transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          <span id="copyEmailText">jagdeepa1047@gmail.com</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Stats Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-12 border-t border-slate-900">
+      <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-xl">
+        <p class="text-2xl font-extrabold text-white font-mono">DRDO & Wipro</p>
+        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Experience & Research</p>
+      </div>
+      <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-xl">
+        <p class="text-2xl font-extrabold text-brand-400 font-mono">10+</p>
+        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Certifications</p>
+      </div>
+      <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-xl">
+        <p class="text-2xl font-extrabold text-white font-mono">C++ & Python</p>
+        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Core Languages</p>
+      </div>
+      <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-xl">
+        <p class="text-2xl font-extrabold text-brand-400 font-mono">Snowflake / dbt</p>
+        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Data Warehousing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
+    <div class="mb-12">
+      <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-400 mb-2">Track Record</h2>
+      <p class="text-3xl font-bold text-white tracking-tight">Work Experience</p>
+    </div>
+
+    <div class="space-y-10 border-l border-slate-800 ml-3 md:ml-4">
+      
+      <!-- Role 1 -->
+      <div class="relative pl-8 md:pl-10">
+        <span class="absolute -left-2.5 top-1.5 w-5 h-5 rounded-full border-4 border-slate-950 bg-brand-400 ring-4 ring-brand-500/20"></span>
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-1 mb-2">
+          <h3 class="text-lg font-bold text-white">Project Engineer / Software Developer</h3>
+          <span class="text-xs font-mono text-slate-400 bg-slate-900 border border-slate-800 px-2.5 py-1 rounded w-fit">April 2026 – Present</span>
+        </div>
+        <p class="text-sm font-medium text-brand-400 mb-4">Cadmaxx Solutions Pvt Ltd <span class="text-slate-500">· Client: LRDE, DRDO, Bengaluru</span></p>
+        <ul class="space-y-2 text-sm text-slate-300 leading-relaxed">
+          <li class="flex items-start gap-2">
+            <span class="text-brand-400 mt-1">▹</span>
+            <span>Develop and maintain mission-critical desktop applications using C, C++, and Qt for cross-platform defense systems.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-400 mt-1">▹</span>
+            <span>Implement modular OOP design and structured testing strategies to ensure long-term codebase reliability and maintainability.</span>
+          </li>
+        </ul>
+        <div class="flex flex-wrap gap-2 mt-4 text-xs font-mono text-slate-400">
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">C++</span>
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">C</span>
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">Qt</span>
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">Cross-Platform Systems</span>
+        </div>
+      </div>
+
+      <!-- Role 2 -->
+      <div class="relative pl-8 md:pl-10">
+        <span class="absolute -left-2 top-1.5 w-4 h-4 rounded-full border-4 border-slate-950 bg-slate-600"></span>
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-1 mb-2">
+          <h3 class="text-lg font-bold text-white">Trainee — Data Analytics & Intelligence</h3>
+          <span class="text-xs font-mono text-slate-400 bg-slate-900 border border-slate-800 px-2.5 py-1 rounded w-fit">Dec 2024 – Dec 2025</span>
+        </div>
+        <p class="text-sm font-medium text-brand-400 mb-4">Wipro Limited <span class="text-slate-500">· Bengaluru, India</span></p>
+        <ul class="space-y-2 text-sm text-slate-300 leading-relaxed">
+          <li class="flex items-start gap-2">
+            <span class="text-brand-400 mt-1">▹</span>
+            <span>Engineered and optimized batch ETL/ELT pipelines using Talend, dbt, and Matillion, feeding structured data into Snowflake data warehouses.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-400 mt-1">▹</span>
+            <span>Wrote advanced SQL transformations to populate fact and dimension models, implementing Slowly Changing Dimensions (SCD Type 1 & 2) for historical auditability.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-400 mt-1">▹</span>
+            <span>Executed schema validation, data reconciliation, and root-cause debugging to enforce data quality and strict SLA targets.</span>
+          </li>
+        </ul>
+        <div class="flex flex-wrap gap-2 mt-4 text-xs font-mono text-slate-400">
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">Snowflake</span>
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">dbt</span>
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">Talend</span>
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">Matillion</span>
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">SCD 1 & 2</span>
+        </div>
+      </div>
+
+      <!-- Role 3 -->
+      <div class="relative pl-8 md:pl-10">
+        <span class="absolute -left-2 top-1.5 w-4 h-4 rounded-full border-4 border-slate-950 bg-slate-600"></span>
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-1 mb-2">
+          <h3 class="text-lg font-bold text-white">Intern — Computer Vision & Machine Learning</h3>
+          <span class="text-xs font-mono text-slate-400 bg-slate-900 border border-slate-800 px-2.5 py-1 rounded w-fit">Jan 2024 – Feb 2024</span>
+        </div>
+        <p class="text-sm font-medium text-brand-400 mb-4">Centre for Airborne Systems (CABS), DRDO <span class="text-slate-500">· Bengaluru</span></p>
+        <ul class="space-y-2 text-sm text-slate-300 leading-relaxed">
+          <li class="flex items-start gap-2">
+            <span class="text-brand-400 mt-1">▹</span>
+            <span>Built a real-time object and facial recognition pipeline using YOLO, OpenCV, and Python.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-400 mt-1">▹</span>
+            <span>Conducted image annotation, augmentations, and quality validations in Roboflow to improve target classification precision.</span>
+          </li>
+        </ul>
+        <div class="flex flex-wrap gap-2 mt-4 text-xs font-mono text-slate-400">
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">Python</span>
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">OpenCV</span>
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">YOLO</span>
+          <span class="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded">Roboflow</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Grid -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
+    <div class="mb-12">
+      <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-400 mb-2">Capabilities</h2>
+      <p class="text-3xl font-bold text-white tracking-tight">Technical Stack</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800/80 hover:border-brand-500/40 transition">
+        <div class="text-brand-400 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        </div>
+        <h3 class="text-white font-semibold mb-2">Languages</h3>
+        <p class="text-xs text-slate-400 mb-4">Production-level systems & scripting</p>
+        <div class="flex flex-wrap gap-1.5 text-xs font-mono">
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Python</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">C++</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">C</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Java</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">SQL</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800/80 hover:border-brand-500/40 transition">
+        <div class="text-brand-400 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7M4 7c0-2 1-3 3-3h10c2 0 3 1 3 3M4 7h16m-5 4h.01"/></svg>
+        </div>
+        <h3 class="text-white font-semibold mb-2">Data Warehousing & ETL</h3>
+        <p class="text-xs text-slate-400 mb-4">Ingestion, transformation & modeling</p>
+        <div class="flex flex-wrap gap-1.5 text-xs font-mono">
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Snowflake</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">dbt</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Talend</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Matillion</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">SCD Type 1 & 2</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800/80 hover:border-brand-500/40 transition">
+        <div class="text-brand-400 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+        </div>
+        <h3 class="text-white font-semibold mb-2">Cloud & Databases</h3>
+        <p class="text-xs text-slate-400 mb-4">Infrastructure & storage engines</p>
+        <div class="flex flex-wrap gap-1.5 text-xs font-mono">
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Google Cloud (GCP)</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Azure</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">MySQL</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Oracle</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800/80 hover:border-brand-500/40 transition">
+        <div class="text-brand-400 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <h3 class="text-white font-semibold mb-2">Analytics & Dashboards</h3>
+        <p class="text-xs text-slate-400 mb-4">Business intelligence & reporting</p>
+        <div class="flex flex-wrap gap-1.5 text-xs font-mono">
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Power BI</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Tableau</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Qlik Sense</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Data Validation</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800/80 hover:border-brand-500/40 transition">
+        <div class="text-brand-400 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+        </div>
+        <h3 class="text-white font-semibold mb-2">Vision & Machine Learning</h3>
+        <p class="text-xs text-slate-400 mb-4">Model inference & computer vision</p>
+        <div class="flex flex-wrap gap-1.5 text-xs font-mono">
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">YOLO</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">OpenCV</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Roboflow</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Dataset Curation</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800/80 hover:border-brand-500/40 transition">
+        <div class="text-brand-400 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h3 class="text-white font-semibold mb-2">Practices & Testing</h3>
+        <p class="text-xs text-slate-400 mb-4">Code quality & delivery</p>
+        <div class="flex flex-wrap gap-1.5 text-xs font-mono">
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">OOP</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Git Integration</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">Structured Unit Testing</span>
+          <span class="bg-slate-800/80 px-2.5 py-1 rounded text-slate-200">SLA Optimization</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
+    <div class="mb-12">
+      <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-400 mb-2">Portfolio</h2>
+      <p class="text-3xl font-bold text-white tracking-tight">Key Projects</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="group bg-slate-900/40 hover:bg-slate-900/70 border border-slate-800/80 hover:border-brand-500/40 p-8 rounded-2xl transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-xs font-mono text-brand-400 mb-3 uppercase tracking-wider">Analytics & BI Pipeline</div>
+          <h3 class="text-xl font-bold text-white group-hover:text-brand-400 transition mb-3">Sales Analytics Dashboard Pipeline</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Constructed a structured data pipeline to ingest sales data from disparate CSV and relational sources. Cleaned, transformed, and modeled tables to power an automated, interactive Power BI KPI dashboard.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 border-t border-slate-800/80 pt-4">
+          <span class="bg-slate-800/60 px-2 py-0.5 rounded">Python</span>
+          <span class="bg-slate-800/60 px-2 py-0.5 rounded">SQL</span>
+          <span class="bg-slate-800/60 px-2 py-0.5 rounded">Power BI</span>
+          <span class="bg-slate-800/60 px-2 py-0.5 rounded">Data Modeling</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="group bg-slate-900/40 hover:bg-slate-900/70 border border-slate-800/80 hover:border-brand-500/40 p-8 rounded-2xl transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-xs font-mono text-brand-400 mb-3 uppercase tracking-wider">Enterprise ETL & Warehousing</div>
+          <h3 class="text-xl font-bold text-white group-hover:text-brand-400 transition mb-3">Hospital Data ETL Pipeline</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Designed an end-to-end data pipeline feeding multi-format healthcare datasets into Snowflake. Configured automated job execution, pipeline logging, and error tracking mechanisms to ensure data integrity.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 border-t border-slate-800/80 pt-4">
+          <span class="bg-slate-800/60 px-2 py-0.5 rounded">Talend</span>
+          <span class="bg-slate-800/60 px-2 py-0.5 rounded">Snowflake</span>
+          <span class="bg-slate-800/60 px-2 py-0.5 rounded">SQL</span>
+          <span class="bg-slate-800/60 px-2 py-0.5 rounded">Pipeline Auditing</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications Grid -->
+  <section id="certifications" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
+    <div class="mb-12">
+      <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-400 mb-2">Qualifications</h2>
+      <p class="text-3xl font-bold text-white tracking-tight">Professional Certifications</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+        <p class="text-xs font-mono text-brand-400">Snowflake</p>
+        <p class="font-semibold text-white mt-1">SnowPro Associate</p>
+        <p class="text-xs text-slate-400 mt-2">Platform Certification (2025–2027)</p>
+      </div>
+
+      <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+        <p class="text-xs font-mono text-brand-400">Databricks</p>
+        <p class="font-semibold text-white mt-1">Certified Data Engineer Associate</p>
+        <p class="text-xs text-slate-400 mt-2">Associate Certification (2025–2027)</p>
+      </div>
+
+      <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+        <p class="text-xs font-mono text-brand-400">Google Cloud</p>
+        <p class="font-semibold text-white mt-1">Professional Data Engineer</p>
+        <p class="text-xs text-slate-400 mt-2">Cloud Data Architecture (2025–2028)</p>
+      </div>
+
+      <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+        <p class="text-xs font-mono text-brand-400">Google Cloud</p>
+        <p class="font-semibold text-white mt-1">Associate Cloud Engineer</p>
+        <p class="text-xs text-slate-400 mt-2">Infrastructure & Operations (2025–2028)</p>
+      </div>
+
+      <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+        <p class="text-xs font-mono text-brand-400">Microsoft</p>
+        <p class="font-semibold text-white mt-1">Power BI Data Analyst Associate</p>
+        <p class="text-xs text-slate-400 mt-2">Certified Business Analyst (2025)</p>
+      </div>
+
+      <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+        <p class="text-xs font-mono text-brand-400">dbt Labs</p>
+        <p class="font-semibold text-white mt-1">dbt Fundamentals</p>
+        <p class="text-xs text-slate-400 mt-2">Analytics Engineering (2025)</p>
+      </div>
+
+      <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+        <p class="text-xs font-mono text-brand-400">Qlik</p>
+        <p class="font-semibold text-white mt-1">Talend Core Data Integration</p>
+        <p class="text-xs text-slate-400 mt-2">Certified Developer (2025–2027)</p>
+      </div>
+
+      <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+        <p class="text-xs font-mono text-brand-400">Qlik</p>
+        <p class="font-semibold text-white mt-1">Qlik Sense Business Analyst</p>
+        <p class="text-xs text-slate-400 mt-2">Visualization Certification (2026–2028)</p>
+      </div>
+
+      <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+        <p class="text-xs font-mono text-brand-400">Matillion Academy</p>
+        <p class="font-semibold text-white mt-1">Matillion ETL Certifications</p>
+        <p class="text-xs text-slate-400 mt-2">Python, DWH, & Semi-Structured Data (2025)</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
+    <div class="mb-12">
+      <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-400 mb-2">Academics</h2>
+      <p class="text-3xl font-bold text-white tracking-tight">Education</p>
+    </div>
+
+    <div class="bg-slate-900/40 border border-slate-800/80 p-6 md:p-8 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-bold text-white">Bachelor of Technology (B.Tech) in Information Technology</h3>
+        <p class="text-slate-400 text-sm mt-1">B P Poddar Institute of Management and Technology, Kolkata</p>
+        <p class="text-xs text-slate-500 font-mono mt-2">October 2020 – July 2024</p>
+      </div>
+      <div class="md:text-right">
+        <span class="inline-block bg-brand-500/10 text-brand-400 border border-brand-500/20 px-3.5 py-1.5 rounded-lg text-sm font-mono font-bold">
+          CGPA: 7.98 / 10
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 py-12 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Jagdeep Kumar Mahto. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="Resume_jagdeep_kumar_mahto.pdf" download class="hover:text-slate-300 transition">Resume PDF</a>
+        <a href="https://linkedin.com/in/jagdeep-kumar-mahto" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition">LinkedIn</a>
+        <a href="mailto:jagdeepa1047@gmail.com" class="hover:text-slate-300 transition">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Mobile Menu & Copy Action -->
+  <script>
+    // Mobile Drawer Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Copy Email to Clipboard
+    function copyEmail() {
+      const email = 'jagdeepa1047@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        const textElement = document.getElementById('copyEmailText');
+        const originalText = textElement.innerText;
+        textElement.innerText = 'Email Copied!';
+        textElement.classList.add('text-brand-400');
+        setTimeout(() => {
+          textElement.innerText = originalText;
+          textElement.classList.remove('text-brand-400');
+        }, 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>
